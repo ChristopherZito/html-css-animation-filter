@@ -68,11 +68,103 @@
 }
 
 .ex-10-icon{
-    animation: gira infinite spin;
-}
-.well{
-    position: relative;
+    animation: gira 1s linear infinite;
 }
 @keyframes gira{
-    
+    0%{
+        transform: rotate(1turn);
+    }
 }
+
+.ex-11-icon:hover{
+    animation: slow-gira 1s linear;
+}
+@keyframes slow-gira{
+    0%{
+        transform: rotate(0turn);
+    }
+    25%{
+        transform: rotate(0.4turn);
+    }
+    80%{
+        transform: rotate(0.9turn);
+    }
+    100%{
+        transform: rotate(0turn);
+    }
+}
+.ex-12-button:hover .ex-12-top-white{
+    animation: move 1s linear infinite;
+}
+@keyframes move{
+    0%{
+        left: 10%;
+    }
+    90%{
+        left: 70%;
+    }
+    100%{
+        left: 10%;
+    }
+}
+.ex-12-button:hover .ex-12-bottom-white{
+    animation: move2 1s linear infinite;
+}
+@keyframes move2{
+    0%{
+        right: 20%;
+    }
+    90%{
+        right: 70%;
+    }
+    100%{
+        right: 20%;
+    }
+}
+
+.ex-13-button:hover .ex-13-top-white{
+    animation: leap 1s linear 1;
+}
+@keyframes leap{
+    0%{
+        left: 10%;
+        top: -10px;
+    }
+    50%{
+        left: 100%;
+        top: -10px;
+    }
+    75%{
+        left: 100%;
+        top: 50px;
+    }
+    100%{
+        left: 50%;
+        top: 50px;
+    }    
+}
+
+.ex-13-button:hover .ex-13-bottom-white{
+    animation: leap2 1s linear 1;
+}
+@keyframes leap2{
+    0%{
+        right: 10%;
+        bottom: -10px;
+    }
+    50%{
+        right: 100%;
+        bottom: -10px;
+    }
+    75%{
+        right: 100%;
+        bottom: 50px;
+        width: 10px;
+    }
+    100%{
+        right: 50%;
+        bottom: 50px;
+        width: 60px
+    }    
+}
+
